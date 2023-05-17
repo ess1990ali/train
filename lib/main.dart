@@ -17,7 +17,16 @@ class MyApp extends StatelessWidget {
                 flex: 3,
                   child:
                   Container(
-                    color: Colors.amber,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(70)
+                        ,border:Border.all()
+                        ,boxShadow: [
+                      BoxShadow(
+                        color:Colors.amber,
+                        spreadRadius: 3,
+                        blurRadius: 6,
+                      )
+                    ]),
                     child: Row(
 
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -86,6 +95,7 @@ class MyApp extends StatelessWidget {
               Expanded(
                 child:
               Container(
+                margin: EdgeInsets.all(20),
                   color: Colors.white,
                   child:
                   Row(
@@ -99,13 +109,25 @@ class MyApp extends StatelessWidget {
                 flex: 2,
                 child:
               Container(
+                margin: EdgeInsets.only(top: 1),
                   child:
                   Row(
                     children: [
                       Expanded(child:
 
                     Container(
-                      color: Colors.black,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10)
+                          ,border:Border.all()
+                          ,boxShadow: [
+                        BoxShadow(
+                          color:Colors.blue,
+                          spreadRadius: 3,
+                          blurRadius: 6,
+                        )
+                      ]),
+                      margin: EdgeInsets.all(20),
+
                       child: Column(
                         children: [
                           Text("colum1")
@@ -113,10 +135,21 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                       ),
+                      
                       Expanded(
                         child:
                       Container(
-                        color: Colors.blueGrey,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10)
+                            ,border:Border.all()
+                        ,boxShadow: [
+                          BoxShadow(
+                            color:Colors.red,
+                            spreadRadius: 3,
+                            blurRadius: 6,
+                          )
+                        ]),
+                        margin: EdgeInsets.all(20),
                         child: Column(
                           children: [
                             Text("colum2")
