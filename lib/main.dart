@@ -10,9 +10,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter layout demo',
       home: Scaffold(
-        body: Container(
+        floatingActionButtonLocation: FloatingActionButtonLocation,
+        floatingActionButton: FloatingActionButton(onPressed: (){},
+                child: Icon(Icons.send),
+        ),
+
+        body:
+        Container(
           child:Column(
             children:  [
+
               Expanded(
                 flex: 3,
                   child:
@@ -46,7 +53,9 @@ class MyApp extends StatelessWidget {
                 child:
                   Row(
                     children: [
+
                           Text("ferd text",style: TextStyle(fontSize: 35),),
+
                   ],
                   ),
 
