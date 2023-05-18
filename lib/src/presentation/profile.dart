@@ -5,7 +5,6 @@ class Profile extends StatefulWidget{
 }
 class _Profile extends State<Profile> {  @override
 Widget build(BuildContext context) {
-
   return  Column(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
