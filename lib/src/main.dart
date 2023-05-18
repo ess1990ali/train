@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '';
+import 'package:training_app/src/presentation/Profile.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -49,6 +49,7 @@ class MyApp extends StatelessWidget {
                   )
               )
               ,
+
             Expanded(
               flex: -1,
               child:
@@ -57,9 +58,7 @@ class MyApp extends StatelessWidget {
                 child:
                   Row(
                     children: [
-                      Expanded(child:
-                      Text("ferd text",style: TextStyle(fontSize: 35),)
-                          ),
+                      Profile()
                   ],
                   ),
 
