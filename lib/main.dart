@@ -10,36 +10,41 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter layout demo',
       home: Scaffold(
-        floatingActionButtonLocation: FloatingActionButtonLocation,
-        floatingActionButton: FloatingActionButton(onPressed: (){},
-                child: Icon(Icons.send),
-        ),
-
-        body:
+        body:SafeArea(child:
         Container(
           child:Column(
             children:  [
-
               Expanded(
                 flex: 3,
                   child:
                   Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(70)
-                        ,border:Border.all()
+
                         ,boxShadow: [
                       BoxShadow(
-                        color:Colors.amber,
-                        spreadRadius: 3,
-                        blurRadius: 6,
+                        color:Color(0xffF9BE7C),
+
                       )
                     ]),
                     child: Row(
-
-                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("first line",style: TextStyle(fontSize: 30),)
-                        ,Text("second text"),
+                        Container(
+
+                        )
+                       ,
+                        Expanded(child:
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("NAME",style: TextStyle(fontSize: 25),),
+                            Text("sube")
+                          ],
+                        )
+                        ),
+                        Expanded(child:
+                        Icon(Icons.search)
+                        )
                       ],
                     ),
                   )
@@ -53,9 +58,9 @@ class MyApp extends StatelessWidget {
                 child:
                   Row(
                     children: [
-
-                          Text("ferd text",style: TextStyle(fontSize: 35),),
-
+                      Expanded(child:
+                      Text("ferd text",style: TextStyle(fontSize: 35),)
+                          ),
                   ],
                   ),
 
@@ -85,7 +90,6 @@ class MyApp extends StatelessWidget {
                       Text("in progres",style: TextStyle(fontSize: 20),)
                     ],
                   )
-
               ),)
               ,
               Expanded(child:
@@ -130,9 +134,8 @@ class MyApp extends StatelessWidget {
                           ,border:Border.all()
                           ,boxShadow: [
                         BoxShadow(
-                          color:Colors.blue,
-                          spreadRadius: 3,
-                          blurRadius: 6,
+                          color:Color(0xff309398),
+
                         )
                       ]),
                       margin: EdgeInsets.all(20),
@@ -153,9 +156,8 @@ class MyApp extends StatelessWidget {
                             ,border:Border.all()
                         ,boxShadow: [
                           BoxShadow(
-                            color:Colors.red,
-                            spreadRadius: 3,
-                            blurRadius: 6,
+                            color:Color(0xffE46471),
+
                           )
                         ]),
                         margin: EdgeInsets.all(20),
@@ -176,6 +178,7 @@ class MyApp extends StatelessWidget {
           ),
 
         ),
+      ),
       ),
     );
   }
