@@ -54,7 +54,8 @@ class MyApp extends StatelessWidget {
                           ),
                           Padding(padding: EdgeInsets.only(left: 220)),
                           FloatingActionButton(onPressed:(){},
-                                child: Icon(Icons.report)
+                                child: Icon(Icons.report,),
+                            backgroundColor: Color(0xff309398),
                             ),
                         ],
                       )),
