@@ -37,7 +37,7 @@ class img extends StatelessWidget {   @override
                 image:DecorationImage(image: profile,fit: BoxFit.fill),shape: BoxShape.circle
               ),
             ),
-            progressColor: Colors.white,),
+            progressColor: Colors.red,),
           ),
         height: 150,
         width: 100,
