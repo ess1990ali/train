@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter layout demo',
       home: Scaffold(
         body: Container(
+          color: Color(0xffEEE1CC),
             child: Column(
               children: [
                 Expanded(
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
                 Expanded(
                   flex: -10,
                   child: Container(
-                      color: Colors.white,
+                      color: Color(0xffEEE1CC),
                       child: Row(
                         children: [
                           Text(
@@ -61,13 +62,13 @@ class MyApp extends StatelessWidget {
                 Expanded(
                     child: Container(
                         // margin: EdgeInsets.only(bottom:80),
-                        color: Colors.white,
+                        color: Color(0xffEEE1CC),
                         child: tasks())),
                 Expanded(
                   flex:-3,
                   child: Container(
                     // padding: EdgeInsets.only(top:80),
-                    color: Colors.white,
+                    color: Color(0xffEEE1CC),
                     child: Row(
                       children: [
                         Text(
