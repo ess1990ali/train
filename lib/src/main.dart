@@ -32,7 +32,8 @@ class MyApp extends StatelessWidget {
                         child: Icon(Icons.menu),
                       ),
                       img(),
-                      Expanded(child: Profile()),
+                      Expanded(
+                          child: Profile()),
                       Align(
                         alignment: FractionalOffset(25,0.3,),
                         child: Icon(Icons.search),
