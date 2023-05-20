@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
                         alignment: FractionalOffset(25,0.3,),
                         child: Icon(Icons.menu),
                       ),
+                      img(),
                       Expanded(child: Profile()),
                       Align(
                         alignment: FractionalOffset(25,0.3,),
@@ -48,8 +49,11 @@ class MyApp extends StatelessWidget {
                           Text(
                             "My tasks",
                             style: TextStyle(fontSize: 25),
-                          )
-
+                          ),
+                          Padding(padding: EdgeInsets.only(left: 220)),
+                          FloatingActionButton(onPressed:(){},
+                                child: Icon(Icons.report)
+                            ),
                         ],
                       )),
                 ),

@@ -5,12 +5,29 @@ class Profile extends StatefulWidget{
 }
 class _Profile extends State<Profile> {  @override
 Widget build(BuildContext context) {
-  return  Column(
+  return
+    Column(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
-      Text("NAME",style: TextStyle(fontSize: 25),),
+      Text("NAME",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
       Text("sube")
     ],
   );
+
 }
+}
+class img extends StatelessWidget {   @override
+  Widget build(BuildContext context) {
+  AssetImage profile=AssetImage('images/profile.png');
+      Image img= Image(image:profile );
+      return Container(
+        padding: EdgeInsets.all(5),
+        child: Align(
+          alignment: FractionalOffset(3,0.5),
+          child: img,
+        ) ,
+        height: 150,
+        width: 100,
+      );
+  }
 }
