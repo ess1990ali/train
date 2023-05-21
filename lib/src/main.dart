@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter layout demo',
       home: Scaffold(
         body: Container(
-          color: Color(0xffEEE1CC),
+          color: Colors.white,
             child: Column(
               children: [
                 Expanded(
@@ -28,16 +28,17 @@ class MyApp extends StatelessWidget {
                       ]),
                   child: Row(
                     children: [
-                      Align(
-                        alignment: FractionalOffset(25,0.3,),
-                        child: Icon(Icons.menu),
-                      ),
+                  Container(
+                    padding: EdgeInsets.fromLTRB(15,1,1,100),
+                      child: Icon(Icons.menu),),
+
                       img(),
                       Expanded(
                           child: Profile()),
-                      Align(
-                        alignment: FractionalOffset(25,0.3,),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(1,1,1,100),
                         child: Icon(Icons.search),
+
                       ),
                     ],
                   ),
@@ -45,37 +46,52 @@ class MyApp extends StatelessWidget {
                 Expanded(
                   flex: -10,
                   child: Container(
-                      color: Color(0xffEEE1CC),
+                      color: Colors.white,
                       child: Row(
                         children: [
-                          Text(
-                            "My tasks",
-                            style: TextStyle(fontSize: 25),
-                          ),
-                          Padding(padding: EdgeInsets.only(left: 220)),
-                          FloatingActionButton(onPressed:(){},
-                                child: Icon(Icons.report,),
-                            backgroundColor: Color(0xff309398),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(20,1,1,1),
+                           child: Text(
+                             "My tasks",
+                             style: TextStyle(fontSize: 25),
+                           ),
+                          )
+                          ,
+                          Padding(padding: EdgeInsets.fromLTRB(180,30,1,1)),
+                          SizedBox(
+                            width: 60,
+                            height: 70,
+                            child:
+                            FloatingActionButton(onPressed:(){},
+                              child: Icon(Icons.calendar_month),
+
+                              backgroundColor: Color(0xff309398),
                             ),
+                          )
                         ],
                       )),
                 ),
                 Expanded(
                     child: Container(
                         // margin: EdgeInsets.only(bottom:80),
-                        color: Color(0xffEEE1CC),
+                        color: Colors.white,
                         child: tasks())),
                 Expanded(
                   flex:-3,
                   child: Container(
                     // padding: EdgeInsets.only(top:80),
-                    color: Color(0xffEEE1CC),
+                    color: Colors.white,
                     child: Row(
                       children: [
-                        Text(
-                          "Active project",
-                          style: TextStyle(fontSize: 28),
+                        Container(
+                            margin: EdgeInsets.fromLTRB(20,1,1,1),
+                          child:
+                            Text(
+                              "Active project",
+                              style: TextStyle(fontSize: 28),
+                            )
                         )
+
                       ],
                     ),
                   ),

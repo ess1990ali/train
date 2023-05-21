@@ -12,28 +12,28 @@ class _Tasks extends State<tasks> {
           leading: CircleAvatar(
       radius: 20,
       backgroundColor: Color(0xffE46471),
-      child: Icon(Icons.lock_clock),
+      child: Icon(IconData(0xe739, fontFamily: 'MaterialIcons')),
     ),
-          title: Text("to do"),
-          subtitle: Text("tasks now, stored"),
+          title: Text("to do",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+          subtitle: Text("tasks now, stored",style: TextStyle(fontSize: 17),),
         ),
         ListTile(
           leading: CircleAvatar(
             radius: 20,
             backgroundColor: Color(0xffF9BE7C),
-            child: Icon(Icons.lock_clock),
+           child: Icon(IconData(0xeed9, fontFamily: 'MaterialIcons',),color: Colors.white,),
           ),
-          title: Text("in progres"),
-          subtitle: Text("tasks now, stored"),
+          title: Text("in progres",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+          subtitle: Text("tasks now, stored",style: TextStyle(fontSize: 17),),
         ),
         ListTile(
           leading: CircleAvatar(
             radius: 20,
             backgroundColor: Colors.blueAccent,
-            child: Icon(Icons.lock_clock),
+            child: Icon(IconData(0xe156, fontFamily: 'MaterialIcons')),
           ),
-          title: Text("done"),
-          subtitle: Text("tasks now, stored"),
+          title: Text("done",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+          subtitle: Text("tasks now, stored",style: TextStyle(fontSize: 17),),
         )
       ],
     );

@@ -27,14 +27,15 @@ Widget build(BuildContext context) {
                 child: Column(
                   mainAxisAlignment:MainAxisAlignment.start,
                   children: [
+                    Padding(padding: EdgeInsets.fromLTRB(40,15,1,1)),
                     new CircularPercentIndicator(
-                      radius: 60.0,
+                      radius: 35.0,
                       lineWidth: 5.0,
                       percent:double ,
                       center: new Text("$double",style: TextStyle(color: Colors.white),),
                       progressColor: Colors.white,
                     ),
-                    Padding(padding: EdgeInsets.only(top: 40)),
+                    Padding(padding: EdgeInsets.fromLTRB(1,50,1,1)),
                     Text("Medical App",style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold,fontSize: 15),),
                     Text("9 hours progress",style: TextStyle(color:Colors.grey,fontSize: 13),),
 
@@ -58,17 +59,23 @@ Widget build(BuildContext context) {
                   child: Column(
                     mainAxisAlignment:MainAxisAlignment.start,
                     children: [
+                      Padding(padding: EdgeInsets.fromLTRB(40,20,1,1)),
                       new CircularPercentIndicator(
-                        radius: 60.0,
-                        lineWidth: 5.0,
+                        radius: 35.0,
+                        lineWidth: 6.0,
                         percent:box2 ,
                         center: new Text("$box2",style: TextStyle(color: Colors.white),),
                         progressColor: Colors.white,
                       ),
-                      Padding(padding: EdgeInsets.only(top: 40)),
-                      Text("Making History Notes",style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold,fontSize: 15),),
-                      Text("20 hours progress",style: TextStyle(color:Colors.grey,fontSize: 13),),
-
+                      Container(
+                        margin: EdgeInsets.fromLTRB(10,30, 1, 1),
+                        child:Text("Making History Notes",style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold,fontSize: 15),),
+                      ),//Padding(padding: EdgeInsets.symmetric(vertical: 11)),
+                      Container(
+                        margin: EdgeInsets.fromLTRB(1,1, 1,1),
+                        child:
+                        Text("20 hours progress",style: TextStyle(color:Colors.grey,fontSize: 13),),
+                      )
                     ],
                   ),
                 ),
